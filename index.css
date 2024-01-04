@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --clr-blackish: #272727;
+  --clr-cyan: #09A093;
+  --clr-redish:#AA123F;
+  --clr-purple: #3E2B47;
+  --clr-gray: #bcc0c4;
+  --clr-idk:#172530;
+  --clr-light-blue : #41A2C0; 
+  --bg-color : #0d0d0d;
+  --font-color: white;
+  
+  --font-style-pixelify:'Pixelify Sans', sans-serif;
+  --font-style: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: var(--font-style-pixelify);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.nob{
+  color: var(--clr-light-blue);
+}
+
+.navlinks{
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+.listsofthings{
+  list-style: none;
+  transition: 0.5s;
+}
+
+.listsofthings:hover{
+  transform: translateY(-5px);
+}
+
+
+.navthings{
+  color: var(--font-color);
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.navthings:hover{
+  color: var(--clr-gray);
+}
+
+
+.information{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: default;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.logo{
+  border-radius: 50%;
+  animation: spin 2s infinite linear;
+  animation-play-state: paused;
+  transition: 0.5s;
+}
+
+.logo:hover{
+  transition: 0.5s;
+  box-shadow: 10px 10px 50px var(--clr-idk) ;
+  animation-play-state: running;
+}
+
+.welcome{
+  margin-top: 1rem;
+  font-size: 28px;
+  color: var(--clr-redish);
+}
+
+.webname{
+  color: var(--clr-cyan);
+}
+
+.webinf{
+  margin-top: 1rem;
+  font-size: 22px;
+  max-width: 90ch;
+  color: var(--clr-gray);
+}
+
+.noobie{
+  color: var(--clr-cyan);
+}
+
+.buildspixld{
+  color: var(--clr-purple);
+}
+
+.bro{
+  color: red;
+}
+
+.pro{
+  font-size: 28px;
+}
+
+.janina{
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
+
+.projects{
+  margin: auto;
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+  width: 90vw;
+  height: 85vh;
+  background-image: url(img/polygon-scatter-haikei.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 2px solid #1e1e1e;
+  box-shadow: 10px 10px 20px #1e1e1e;
+}
+
+.projects-blur{
+  filter: blur(5px);
+}
+
+.pro{
+  margin-top: 1rem;
+}
+
+.idk{
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.gamez{
+  width: 25vw;
+  height: 30vw;
+  border-radius: 10px;
+  display: flex;
+  background-image: url(img/stacked-steps-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.elem{
+  margin-top: 35%;
+  width: 10vw;
+  height: 10vw;
+}
+
+.write{
+  text-decoration: none;
+  color: var(--font-color);
+  margin-top: 1.5rem;
+  font-size: 20px;
+}
+
+.gamez:hover{
+  transform: translateY(-5px);
+}
+
+html::-webkit-scrollbar{
+  background-color: var(--bg-color);
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: var(--clr-gray);
+  scrollbar-width: none;
+  border-radius: 10px;
+}
