@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --clr-blackish: #272727;
+  --clr-cyan: #09A093;
+  --clr-redish:#AA123F;
+  --clr-purple: #3E2B47;
+  --clr-gray: #bcc0c4;
+  --clr-idk:#172530;
+  --clr-light-blue : #41A2C0; 
+  --clr-bg : #0d0d0d;
+  --clr-white: white;
+  --clr-dark-cyan: #0B7D73;
+  --clr-dark-redish:#861A3A;
+
+  --clr-font: white;
+  --font-style-pixelify:'Pixelify Sans', sans-serif;
+  --font-style: 'Poppins', sans-serif;
+}
+
+body{
+  background-image: url(img/tic-tac-toe-background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.choose{
+  text-align: center;
+  margin-top: 5rem;
+  
+}
+
+.x{
+  color: var(--clr-cyan);
+}
+
+.o{
+  color: var(--clr-redish);
+}
+
+.inputl{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs{
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#x{
+  background-color: var(--clr-cyan);
+  padding: 0.3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  user-select: none;
+  border: none;
+  border-left: 3px solid #4F3E45;
+  border-top: 3px solid #4F3E45;
+  border-bottom: 3px solid #4F3E45;
+  transition: 0.5s;
+}
+
+#x:hover{
+  background-color: var(--clr-dark-cyan);
+  transform: translateY(-3px);
+}
+
+#o{
+  background-color: var(--clr-redish);
+  padding: 0.3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: 3px solid #4F3E45;
+  border-top: 3px solid #4F3E45;
+  border-bottom: 3px solid #4F3E45;
+  user-select: none;
+  transition: 0.5s;
+}
+
+#o:hover{
+  background-color: var(--clr-dark-redish);
+  transform: translateY(-3px);
+}
+
+#x,#o{
+  cursor: pointer;
+  color: var(--clr-white);
+}
+
+#board{
+  text-align: center;
+  user-select: none;
+}
+
+.cell{
+  width: 75px;
+  height: 75px;
+  border: 2px solid;
+  line-height: 75px;
+  font-size: 50px;
+  user-select: none;
+}
+
+.cell:active{
+  cursor: pointer;
+}
+
+#cellcontainer{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 225px;
+  margin: auto;
+  margin-top: 3rem;
+  user-select: none;
+}
+
+
+
