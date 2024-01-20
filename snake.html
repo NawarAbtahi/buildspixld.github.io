@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Web</title>
+    <link rel="stylesheet" href="snake.css">
+    <link rel="icon" href="img/js.svg">
+</head>
+<body>
+    <p class="instruc">Choose your snake's Color <span class="brac1">(</span>Optional<span class="brac2">)</span></p>
+    <div class="clr-containers">
+      <button class="clr-cyan" value="#0B7D73" id="clrs"></button>
+      <button class="clr-yellow" value=" #FFC300" id="clrs"></button>
+      <button class="clr-purple" value="#862A3A" id="clrs"></button>
+    </div>
+    <div class="lmao">
+      <button type="button" class="start-game"><img src="img/play-solid.svg" alt="play-btn.svg" class="img-play"><p class="txt-start">Start</p></button> 
+    </div>
+    <div id="gameContainer">
+      <canvas id="snakeBoard" width="500" height="500"></canvas>
+      <div id="score">0</div>
+      <div class="popUp" id="popUp">
+        <p class="over">GameOver</p>
+        <p class="yourScore"></p>
+        <button type="button" id="restart">Restart</button>
+      </div>
+    </div>
+    <script src="snake.js"></script>
+</body>
+</html>
+
